@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    min-height: 100vh;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.glass{
+    background: white;
+    min-height: 70vh;
+    width: 60%;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+}
+.circle1, .circle2{
+    background: white;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1));
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    border-radius: 50%;
+    /* opacity: 0.7; */
+    /* top: 5%;
+    left: 10%; */
+}
+.circle1{
+    top: 4%;
+    right: 10%;
+}
+.circle2{
+    bottom: 4%;
+    left: 12%;
+}
+.link img{
+    height: 35px;
+}
+.link{
+    display: flex;
+    margin: 2rem 0rem;
+    padding: 1rem 5rem;
+    align-items: center;
+}
+.link h3{
+    padding: 0rem 2rem;
+}
+.pro img{
+    height: 60px;
+    rotate: 315deg;
+    position: absolute;
+    top: 18%;
+    right: 14%;
+}
+.pro{
+    padding: 0.6rem;
+    border-radius: 1.3rem;
+    color: rgb(98, 92, 92);
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    position: relative;
+}
+.pro h2{
+    width: 40%;
+}
+.card img{
+    height: 70px;
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+.card h2{
+    color: #426696;
+}
+.card{
+    padding: 15px;
+    border: 1px solid white;
+    background: rgba(245, 242, 242, 0.404);
+    border-radius: 1rem;
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0rem;
+    box-shadow: 4px 4px 20px gray;
+}
+.card-info{
+    justify-content: space-between;
+}
+.dashboard{
+    padding: 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    /* background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3)); */
+}
+.games{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.user img{
+    border-radius: 50%;
+}
+h1{
+    font-weight: 600;
+    color: #426696;
+    font-size: 3rem;
+    opacity: 0.6;
+}
+.status h1{
+    margin-top: 0.7rem;
+    margin-bottom: 2rem;
+}
+.status input{
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border: none;
+    width: 80%;
+    border-radius: 2rem;
+    padding: 0.5rem;
+}
+.progress{
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    width: 100%;
+    height: 30%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+.progress::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgb(236, 236, 236);
+    left: 60%;
+}
